@@ -119,10 +119,10 @@ this.transitionTo('/posts/1?sort=date&showDetails=true');
 
 ### Opting into a full transition
 
-Arguments provided to `transitionTo`
+When arguments provided to `transitionTo`
 or `link-to` only correspond to a change in query param values,
 and not a change in the route hierarchy, it is not considered a
-full transition, which means that hooks like `model` and
+"full" transition; hooks like `model` and
 `setupController` won't fire by default, but rather only
 controller properties will be updated with new query param values, as
 will the URL.
